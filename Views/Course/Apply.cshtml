@@ -1,0 +1,53 @@
+﻿@model Candidate
+<div class="display-6">
+    Apply
+</div>
+
+<form method="post" asp-action="apply">
+    <div class="form-group my-2">
+        <label asp-for="Email">E-Mail</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="form-group my-2">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Surname"></label>
+        <input asp-for="Surname" class="form-control" />
+    </div>
+
+    <div class="form-group my-2">
+        <label asp-for="Age"></label>
+        <select asp-for="Age" class="form-control">
+            <option value="0-18">0-18</option>
+            <option value="19-25">19-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-55">46-55</option>
+            <option value="56-65">56-65</option>
+            <option value="65+">65+</option>
+        </select>
+    </div>
+
+    <fieldset>
+        <legend>Select One Course</legend>
+        <p>
+            <input id="mvc" type="radio" asp-for="SelectedCourse" value="ASP.NET Core MVC" />
+            <label>ASP.NET Core MVC</label>
+
+            <input id="api" type="radio" asp-for="SelectedCourse" value="ASP.NET Core API" />
+            <label>ASP.NET Core API</label>
+
+            <input id="api" type="radio" asp-for="SelectedCourse" value="Blazor" />
+            <label>Blazor</label>
+        </p>
+    </fieldset>
+
+    <div>
+        <button class="btn btn-primary" type="=submit">Apply</button>
+        <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Home</a>
+    </div>
+</form>
