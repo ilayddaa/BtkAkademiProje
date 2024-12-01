@@ -21,6 +21,10 @@ public class CourseController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult Apply([FromForm] Candidate model)
     {
+        if (Repository.Applications.Any(x => x.Email == model.Email)) // eğer email adresi daha önce kayıt edilmişse hata ver
+        {
+            ModelState.AddModelError("Email", "This email is already registered");
+        }
         if (ModelState.IsValid) // eğer model doğruysa
         {
             Repository.Add(model);
