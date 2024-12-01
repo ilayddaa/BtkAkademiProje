@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 using BtkAkademiProje.Models;
+using System.Reflection.Metadata.Ecma335;
 
 namespace BtkAkademiProje.Controllers;
 public class CourseController : Controller
@@ -20,8 +21,11 @@ public class CourseController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult Apply([FromForm] Candidate model)
     {
-        Repository.Add(model);
-        return View("Feedback", model); // Feed.cshtml
+        if (ModelState.IsValid) // eğer model doğruysa
+        {
+            Repository.Add(model);
+            return View("Feedback", model);
+        }
+        return View(model);
     }
-
 }

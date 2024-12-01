@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BtkAkademiProje")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dff1802b772e46efd8fdcb26d790175e845de365")]
 [assembly: System.Reflection.AssemblyProductAttribute("BtkAkademiProje")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BtkAkademiProje")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

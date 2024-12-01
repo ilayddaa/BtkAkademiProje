@@ -28,3 +28,4 @@
 /Users/ilayda/Desktop/adsız klasör/BtkAkademiProje/bin/Debug/net8.0/BtkAkademiProje.runtimeconfig.json
 /Users/ilayda/Desktop/adsız klasör/BtkAkademiProje/obj/Debug/net8.0/BtkAkademiProje.genruntimeconfig.cache
 /Users/ilayda/Desktop/adsız klasör/BtkAkademiProje/obj/Debug/net8.0/ref/BtkAkademiProje.dll
+/Users/ilayda/Desktop/adsız klasör/BtkAkademiProje/obj/Debug/net8.0/BtkAkademiProje.sourcelink.json
