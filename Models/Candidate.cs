@@ -13,8 +13,8 @@ public class Candidate
     [Required(ErrorMessage = "Surname is required")] // surname zorunlu alan
     public string Surname { get; set; } = string.Empty;
 
-    public string? FullName => $"{Name} {Surname.ToUpper()}";
-    public int? Age { get; set; }
+    public string? FullName => $"{Name} {Surname?.ToUpper()}";
+    public string? Age { get; set; }
     public string? SelectedCourse { get; set; } = String.Empty; // null olabilir
     public DateTime ApplyAt { get; set; }
 
